@@ -1,0 +1,1 @@
+SELECT COUNT(DISTINCT tb_mahasiswa.Nim) AS mahasiswa_yang_mengambil_matkul FROM tb_mahasiswa INNER JOIN ambil_mk ON tb_mahasiswa.Nim=ambil_mk.Nim;

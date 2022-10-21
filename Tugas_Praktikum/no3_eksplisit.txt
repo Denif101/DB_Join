@@ -1,0 +1,3 @@
+SELECT tb_mahasiswa.Nim, nama, tb_matakuliah.kode_mk, nama FROM tb_mahasiswa
+INNER JOIN (tb_matakuliah INNER JOIN ambil_mk ON tb_matakuliah.kode_mk = ambil_mk.kode_mk)
+ON tb_mahasiswa.Nim = ambil_mk.Nim;

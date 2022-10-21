@@ -1,0 +1,3 @@
+SELECT jenis_kelamin, COUNT(jenis_kelamin) AS jumlah FROM tb_mahasiswa
+LEFT OUTER JOIN ambil_mk ON tb_mahasiswa.Nim = ambil_mk.Nim
+WHERE ambil_mk.Nim IS NULL GROUP BY jenis_kelamin;

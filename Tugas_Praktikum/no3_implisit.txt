@@ -1,0 +1,2 @@
+SELECT tb_mahasiswa.Nim, nama, tb_matakuliah.kode_mk, nama FROM tb_mahasiswa, tb_matakuliah, ambil_mk
+WHERE tb_matakuliah.kode_mk = ambil_mk.kode_mk AND tb_mahasiswa.Nim = ambil_mk.Nim;

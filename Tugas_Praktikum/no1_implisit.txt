@@ -1,0 +1,3 @@
+SELECT COUNT(DISTINCT (nama))
+AS mahasiswa_yang_mengambil_matkul FROM tb_mahasiswa,
+ambil_mk WHERE tb_mahasiswa.Nim = ambil_mk.Nim;

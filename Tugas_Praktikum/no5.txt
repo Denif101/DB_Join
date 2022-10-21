@@ -1,0 +1,3 @@
+SELECT tb_matakuliah.kode_mk, nama, sks, semester FROM tb_matakuliah
+LEFT OUTER JOIN (tb_mahasiswa LEFT OUTER JOIN ambil_mk ON tb_mahasiswa.Nim = ambil_mk.Nim)
+on tb_matakuliah.kode_mk = ambil_mk.kode_mk WHERE tb_mahasiswa.Nim IS NULL;

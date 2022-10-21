@@ -1,0 +1,1 @@
+INSERT INTO tb_mahasiswa VALUES ("101", "Arif", "L", "JL.Kenangan"), ("102", "Budi", "L", "JL.Jombang"), ("103", "Wati", "P", "JL.Surabaya"), ("104", "Ika", "P", "JL.Jombang"), ("105", "Tono", "L", "JL.Jakarta"), ("106", "Iwan", "L", "JL.Bandung"), ("107", "Sari", "P", "JL.Malang");

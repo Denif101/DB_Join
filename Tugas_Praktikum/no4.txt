@@ -1,0 +1,1 @@
+SELECT tb_mahasiswa.Nim, nama, SUM(sks) AS jumlah_sks FROM tb_mahasiswa INNER JOIN (tb_matakuliah INNER JOIN ambil_mk ON tb_matakuliah.kode_mk = ambil_mk.kode_mk) ON tb_mahasiswa.Nim = ambil_mk.Nim GROUP BY nama HAVING SUM(sks)>4 AND SUM(sks)<10;
