@@ -1,0 +1,2 @@
+SELECT customer.customer_id, customer_name, customer_addres, orders_id, order_date, qty, amount FROM customer INNER JOIN orders ON customer.customer_id = orders.orders_id
+UNION SELECT customer.customer_id, customer_name, customer_addres, orders_id, order_date, qty, amount FROM customer LEFT OUTER JOIN orders ON customer.customer_id = orders.orders_id;

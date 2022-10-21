@@ -1,0 +1,2 @@
+SELECT instruktur.nip, nama_ins, jurusan, asal_kota, nama_mk FROM instruktur INNER JOIN (matakuliah INNER JOIN ambil_mk ON matakuliah.kd_mk = ambil_mk.kd_mk)
+ON instruktur.nip = ambil_mk.nip WHERE nama_mk = "Basis Data";

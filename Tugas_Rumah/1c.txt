@@ -1,0 +1,1 @@
+SELECT instruktur.nip nama_ins, jurusan, asal_kota FROM instruktur LEFT OUTER JOIN ambil_mk ON instruktur.nip = ambil_mk.nip WHERE ambil_mk.nip IS NULL;

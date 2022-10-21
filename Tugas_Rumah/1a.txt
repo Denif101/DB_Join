@@ -1,0 +1,4 @@
+SELECT ambil_mk.kd_mk, nama_mk, jml_mhs
+FROM matakuliah INNER JOIN ambil_mk
+ON matakuliah.kd_mk = ambil_mk.kd_mk
+WHERE jml_mhs=40;
